@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Home_refresh_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="TSE-IY-lQW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPs-Zi-Eax" customClass="ZHPasswordView">
+                                <rect key="frame" x="0.0" y="155" width="600" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="MZ6-Il-HYX"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiU-Jn-r7L">
+                                <rect key="frame" x="0.0" y="61" width="600" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="nPv-Kh-nVa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KiU-Jn-r7L" secondAttribute="trailing" id="0p4-Tr-fSo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zPs-Zi-Eax" secondAttribute="bottom" constant="145" id="Bo2-4O-bx0"/>
+                            <constraint firstAttribute="bottom" secondItem="TSE-IY-lQW" secondAttribute="bottom" id="CsX-QA-Vqm"/>
+                            <constraint firstItem="TSE-IY-lQW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Egx-Kq-H81"/>
+                            <constraint firstAttribute="trailing" secondItem="TSE-IY-lQW" secondAttribute="trailing" id="MEn-6c-2gc"/>
+                            <constraint firstItem="KiU-Jn-r7L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="PSU-z4-1Zc"/>
+                            <constraint firstAttribute="trailing" secondItem="zPs-Zi-Eax" secondAttribute="trailing" id="W4v-w7-sdc"/>
+                            <constraint firstItem="TSE-IY-lQW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YcA-OA-c5h"/>
+                            <constraint firstItem="KiU-Jn-r7L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qMy-rN-tG6"/>
+                            <constraint firstItem="zPs-Zi-Eax" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xoG-np-Wi0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordView" destination="zPs-Zi-Eax" id="Jqz-9Q-md1"/>
+                        <outlet property="tipLabel" destination="KiU-Jn-r7L" id="GsM-MU-OSS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_refresh_bg.png" width="375" height="667"/>
+    </resources>
+</document>
